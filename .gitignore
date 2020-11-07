@@ -1,5 +1,5 @@
 node_modules
-public/api.js
-public/index.html
+lib/api.js
+lib/index.html
 .DS_Store
 **/.DS_Store

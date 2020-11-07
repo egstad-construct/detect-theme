@@ -1,5 +1,5 @@
 {
-  "name": "@construct/detect-theme",
+  "name": "@egstad/detect-theme",
   "version": "0.0.1",
   "description": "Detect a user's preferred scheme",
   "main": "lib/index.js",
