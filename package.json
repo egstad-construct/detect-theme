@@ -1,6 +1,6 @@
 {
   "name": "@egstad/detect-theme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Detect a user's preferred scheme",
   "main": "index.js",
   "scripts": {
