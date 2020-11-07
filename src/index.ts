@@ -1,11 +1,8 @@
 const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-const preferredTheme = {
-  init() {
-    this.get()
-    this.watch()
-  },
+const theme = {
   watch() {
+    this.get()
     mediaQuery.addEventListener("change", this.get, false);
   },
   teardown() {
@@ -20,4 +17,4 @@ const preferredTheme = {
   },
 };
 
-module.exports = preferredTheme;
+module.exports = theme;
