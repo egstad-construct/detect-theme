@@ -2,6 +2,7 @@ const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 module.exports = {
   watch() {
+    this.get()
     mediaQuery.addEventListener("change", this.get, false);
   },
   teardown() {
