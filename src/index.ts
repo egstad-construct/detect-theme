@@ -1,8 +1,7 @@
 const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-const theme = {
+module.exports = {
   watch() {
-    this.get()
     mediaQuery.addEventListener("change", this.get, false);
   },
   teardown() {
@@ -11,10 +10,10 @@ const theme = {
   get() {
     const theme = mediaQuery.matches ? "dark" : "light";
     const event = new CustomEvent("colorSchemeUpdated", {
-      detail: { theme },
+      detail: {
+        theme,
+      },
     });
     window.dispatchEvent(event);
   },
 };
-
-module.exports = theme;
