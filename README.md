@@ -7,46 +7,44 @@
 ## Installation
 
 ```js
-npm install ... -D
+npm install @construct/detect-theme
 ```
+---
 
-## Example
-
-The module has four simple functions. More often than not, you'll only need to start up 
+## Usage
 
 ```js
-import preferredTheme from 'detect-preferredTheme'
+import theme from '@construct/detect-theme'
 
-preferredTheme.init()
+window.addEventListener('colorSchemeUpdated', (e) => {
+  if (e.detail.theme === 'dark') { ... }
+})
+
+theme.watch()
 ```
 
-This gets the current theme and watches for changes.
+The `watch()` method is more than likely all you'll need. It does two things: 
+
+1. Get the user's current preferred theme and watches for changes.
+2. If a change is detected, a custom event is fired.
+
+---
+
+## Methods 
+```js
+// gets current scheme and watches for changes
+theme.watch()
+
+// gets current scheme (doesn't watch)
+theme.get()
+
+// shut 'er down
+theme.destroy()
+```
 
 
 ```js
-// 1. gets the user's current preferred color theme
-// 2. watches for any changes
-preferredTheme.init()
 
-// gets the user's curent preferred color theme
-preferredTheme.get()
-
-// watches for any changes
-preferredTheme.watch()
-
-// stop watching
-preferredTheme.destroy()
-```
-
-
-```js
-const onSchemeChange = scheme => {
-  if (scheme === 'dark') {
-    // turn off the lights! 🌃️
-  } else {
-    // let there be light! 🌅️
-  }
-}
 
 // detect updates
 window.addEventListener('colorSchemeUpdated', (e) => {
