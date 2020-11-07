@@ -1,0 +1,5 @@
+node_modules
+public/api.js
+public/index.html
+.DS_Store
+**/.DS_Store

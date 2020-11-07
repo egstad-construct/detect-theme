@@ -1,0 +1,34 @@
+{
+  "name": "@construct/detect-preferredtheme",
+  "version": "0.0.1",
+  "description": "Detect a user's preferred scheme",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egstad-construct/detect-preferredTheme.git"
+  },
+  "keywords": [
+    "prefers-color-scheme",
+    "color",
+    "scheme",
+    "theme"
+  ],
+  "author": "Jordan Egstad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egstad-construct/detect-preferredTheme/issues"
+  },
+  "homepage": "https://github.com/egstad-construct/detect-preferredTheme#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^8.0.9",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
