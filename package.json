@@ -2,8 +2,7 @@
   "name": "@egstad/detect-theme",
   "version": "0.2.0",
   "description": "Detect a user's preferred scheme",
-  "main": "lib/index.js",
-  "types": "lib",
+  "main": "index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,11 +23,5 @@
     "url": "https://github.com/egstad-construct/detect-preferredTheme/issues"
   },
   "homepage": "https://github.com/egstad-construct/detect-preferredTheme#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "ts-loader": "^8.0.9",
-    "typescript": "^4.0.5",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.2.0"
-  }
+  "dependencies": {}
 }
