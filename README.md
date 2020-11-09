@@ -2,7 +2,12 @@
 
 > A micro ES6 module (~0.5KB) for detecting a users `preferred-color-scheme` and watching for changes 🐛️ 🔍️ 👀️.
 
-![Coverage:statements](https://img.shields.io/badge/Coverage:statements-100%-59CF5E.svg) ![Coverage:lines](https://img.shields.io/badge/Coverage:lines-100%-59CF5E.svg) ![Coverage:functions](https://img.shields.io/badge/Coverage:functions-100%-59CF5E.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![Coverage:statements](./coverage/badge-statements.svg)](#)
+[![Coverage:functions](./coverage/badge-functions.svg)](#)
+[![Coverage:lines](./coverage/badge-lines.svg)](#)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 
