@@ -1,5 +1,5 @@
 TN:
-SF:/Users/jordanegstad/Sites/@construct/detect-preferredTheme/index.js
+SF:/Users/jordanegstad/Sites/@construct/detect-theme/index.js
 FN:3,(anonymous_0)
 FN:8,(anonymous_1)
 FN:12,(anonymous_2)
@@ -27,7 +27,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/jordanegstad/Sites/@construct/detect-preferredTheme/matchMedia.mock
+SF:/Users/jordanegstad/Sites/@construct/detect-theme/matchMedia.mock
 FN:3,(anonymous_0)
 FNF:1
 FNH:1
