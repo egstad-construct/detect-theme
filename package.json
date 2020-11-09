@@ -4,8 +4,8 @@
   "description": "Detect a user's preferred scheme",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./test/index.html --out-dir ./test/dist",
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,15 @@
     "url": "https://github.com/egstad-construct/detect-preferredTheme/issues"
   },
   "homepage": "https://github.com/egstad-construct/detect-preferredTheme#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3",
+    "parcel-bundler": "^1.7.0"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost:1234/"
+  }
 }
