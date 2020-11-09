@@ -54,3 +54,15 @@ test('On Update', () => {
   expect(spyOnDispatch).toHaveBeenCalled();
   expect(fakeTheme).toBe('light');
 });
+
+
+
+test('On Destroy', () => {
+  // make sure that events are fired
+  const spyOnTeardown = jest.spyOn(theme, 'teardown')  
+
+  // fire it off!
+  theme.teardown()
+  
+  expect(spyOnTeardown).toHaveBeenCalled();
+});

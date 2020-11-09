@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./test/index.html --out-dir ./test/dist",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test:coverage  && jest-coverage-badges"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,9 @@
     "url": "https://github.com/egstad-construct/detect-preferredTheme/issues"
   },
   "homepage": "https://github.com/egstad-construct/detect-preferredTheme#readme",
-  "dependencies": {},
+  "dependencies": {
+    "jest-coverage-badges": "^1.1.2"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
@@ -32,6 +36,11 @@
   },
   "jest": {
     "verbose": true,
-    "testURL": "http://localhost:1234/"
+    "testURL": "http://localhost:1234/",
+    "coverageReporters": [
+      "json-summary", 
+      "text",
+      "lcov"
+    ]
   }
 }
