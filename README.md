@@ -28,7 +28,7 @@ window.addEventListener('colorSchemeUpdated', (e) => {
       // light theme code here...
       break;
     default:
-      // no preference code here...
+      // user has no preference
       break;
   }
 })
