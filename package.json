@@ -6,8 +6,9 @@
   "scripts": {
     "start": "parcel ./test/index.html --out-dir ./test/dist",
     "test": "jest --watchAll",
-    "test:coverage": "npm test -- --coverage",
-    "test:badges": "npm run test:coverage  && jest-coverage-badges"
+    "test:coverage": "jest --coverage",
+    "test:badges": "npm run test:coverage && jest-coverage-badges",
+    "prepublish": "npm run test:coverage; npm run test:badges"
   },
   "repository": {
     "type": "git",
