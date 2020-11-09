@@ -18,7 +18,12 @@
     "prefers-color-scheme",
     "color",
     "scheme",
-    "theme"
+    "theme",
+    "theme-changer",
+    "dark-mode",
+    "light-mode",
+    "es6",
+    "module"
   ],
   "author": "Jordan Egstad",
   "license": "MIT",
