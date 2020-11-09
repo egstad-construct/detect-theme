@@ -5,4 +5,4 @@ lib/index.html
 **/.DS_Store
 .vscode
 .cache
-test
+test/dist
