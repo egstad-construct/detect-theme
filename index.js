@@ -10,7 +10,10 @@ const teardown = () => {
 }
 
 export const get = () => {
-  const theme = mediaQuery.matches ? "dark" : "light";
+  const theme = ["dark", "light", "no-preference"].find(
+    (scheme) => window.matchMedia(`(prefers-color-scheme: ${scheme})`).matches
+  );
+
   const event = new CustomEvent("colorSchemeUpdated", {
     detail: {
       theme,

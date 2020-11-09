@@ -18,13 +18,21 @@ npm install @egstad/detect-theme
 ```js
 import theme from '@egstad/detect-theme'
 
-// 1. watch for `colorSchemeUpdated` events
-// 2. e.detail.theme returns 'light' or 'dark'
+// watch for `colorSchemeUpdated` events
 window.addEventListener('colorSchemeUpdated', (e) => {
-  if (e.detail.theme === 'dark') {
-    // update your css vars, add/remove css classes, etc.
+  switch (e.detail.theme) {
+    case 'dark':
+      // dark theme code here...
+      break;
+    case 'light':
+      // light theme code here...
+      break;
+    default:
+      // no preference code here...
+      break;
   }
 })
+
 
 // 1. fetch preferred theme
 // 2. dispatch result via 'colorSchemeUpdated'
@@ -47,4 +55,34 @@ theme.watch()
 
 // removes `colorSchemeUpdated` event listener from window
 theme.destroy()
+```
+
+## Example
+
+Here is a screencap demonstrating the realtime updates on Mac OS *(System Preferences > General > Appearance)*.
+
+![Example of changing Preferred Color Scheme on Mac OS](./test/_test.gif)
+
+### Example: Editing CSS Variables on `colorSchemeUpdated`
+
+```js
+window.addEventListener('colorSchemeUpdated', (e) => {
+  switch (e.detail.theme) {
+    case 'dark':
+      // dark theme
+      root.style.setProperty('--background', 'black');
+      root.style.setProperty('--foreground', 'white');
+      break;
+    case 'light':
+      // light theme
+      root.style.setProperty('--background', 'white');
+      root.style.setProperty('--foreground', 'black');
+      break;
+    default:
+      // user has no preference
+      root.style.setProperty('--background', '#D11D05');
+      root.style.setProperty('--foreground', '#D1E5E1');
+      break;
+  }
+})
 ```
