@@ -1,15 +1,11 @@
 # Detect Preferred Color Scheme
 
-> A micro ES6 module (~0.5KB) for detecting a users `preferred-color-scheme` and watching for changes 🐛️ 🔍️ 👀️.
-
+> A micro ES6 module (~0.5KB) for detecting a users `preferred-color-scheme` and watching for changes. 🐛️ 🔍️ 👀️
 
 [![Coverage:statements](./coverage/badge-statements.svg)](#)
 [![Coverage:functions](./coverage/badge-functions.svg)](#)
 [![Coverage:lines](./coverage/badge-lines.svg)](#)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
 
 ## Installation
 
@@ -21,7 +17,6 @@ npm install @egstad/detect-theme
 
 ```js
 import theme from '@egstad/detect-theme'
-
 
 // 1. watch for `colorSchemeUpdated` events
 // 2. e.detail.theme returns 'light' or 'dark'
