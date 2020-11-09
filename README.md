@@ -1,6 +1,6 @@
 # Detect Preferred Color Scheme 🐛️ 🔍️ 👀️
 
-> A micro ES6 module (~0.5KB) for detecting a users `preferred-color-scheme` and watching for changes. 🐛️ 🔍️ 👀️
+> A micro ES6 module (~0.5KB) for detecting a users `preferred-color-scheme` and watching for changes.
 
 [![Coverage:statements](./coverage/badge-statements.svg)](#)
 [![Coverage:functions](./coverage/badge-functions.svg)](#)
